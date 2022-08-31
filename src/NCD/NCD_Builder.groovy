@@ -12,4 +12,9 @@ class NCD_Builder {
         return works;
     }
 
+    public static getResources(){
+        def string = libraryResource "text.txt"
+        return string
+    }
+
 }
