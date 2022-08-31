@@ -12,8 +12,8 @@ class NCD_Builder {
         return works;
     }
 
-    public static String getResources(){
-        String string = libraryResource 'text.txt'
+    public static String getResources(Script script){
+        String string = script.libraryResource 'text.txt'
         return string
     }
 
