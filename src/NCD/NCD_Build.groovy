@@ -1,4 +1,4 @@
-package NCD.NCD_Build
+package NCD.NCD_Build.NCD_Build
 
 class NCD_Build {
 
