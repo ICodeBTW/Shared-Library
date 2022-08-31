@@ -2,8 +2,14 @@ package NCD.NCD_Builder
 
 class NCD_Builder {
 
-    public static void main() {
+    static int works= 604
+
+    public static void main(String[] args) {
         println('Hello ')
+    }
+
+    public static getMethod(){
+        return works;
     }
 
 }
