@@ -1,4 +1,4 @@
-import NCD.NCD_Build
+import NCD.NCD_Builder
 
 def call(Script script)
 {
