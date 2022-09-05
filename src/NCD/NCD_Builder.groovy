@@ -1,8 +1,14 @@
 package NCD
+import groovy.transform.SourceURI
+import java.nio.file.Path
+import java.nio.file.Paths
 
 class NCD_Builder {
 
     static int works = 604
+    @SourceURI
+    public static URI uri;
+
 
     public static void main(String[] args) {
         println('Hello ')
@@ -21,5 +27,12 @@ class NCD_Builder {
     private String hello(){
         return 'Hello'
     }
+
+
+    public static def loc() {
+        Path scriptLocation = Paths.get(NCD_Builder.uri)
+        return scriptLocation.getParent().getParent().resolve('resources').toString()
+    }
+ 
 
 }

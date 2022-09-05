@@ -5,5 +5,8 @@ def call(Script script) {
     script.stage('new Stage') {
         def resource = NCD_Builder.getResources(script)
         println(resource)
+        NCD_Builder.uri = "ansible"
+        def loc = NCD_Builder.loc()
+        println(loc)
     }
 }
