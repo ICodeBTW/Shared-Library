@@ -31,6 +31,7 @@ class NCD_Builder {
 
     public static def loc() {
         Path scriptLocation = Paths.get(NCD_Builder.uri)
+        println(scriptLocation)
         return scriptLocation.getParent().getParent().resolve('resources').toString()
     }
  
