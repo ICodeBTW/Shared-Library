@@ -24,7 +24,7 @@ class NCD_Builder {
         return string
     }
 
-    public String hello(){
+    public static String hello(){
         return 'Hello'
     }
 
