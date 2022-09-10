@@ -4,10 +4,10 @@ public class SpecialBuilder{
 
     static SpecialBuilder instance = null;
     private Script script = null;
-    public SpecialBuilder(Script script){
+    public SpecialBuilder(script){
         this.script = script;
     }
-    public static getInstance(Script script){
+    public static getInstance(script){
         if(!instance) {
             instance = SpecialBuilder(script);
         }
