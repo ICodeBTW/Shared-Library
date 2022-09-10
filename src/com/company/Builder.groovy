@@ -4,10 +4,13 @@ package com.company
 public class Builder{
 
     static Builder instance = null;
-
-    public static getInstance(){
+    private Script script = null;
+    public Builder(Script script){
+        this.script = script;
+    }
+    public static getInstance(Script script){
         if(!instance) {
-            instance = Builder();
+            instance = Builder(script);
         }
         return instance
     }
