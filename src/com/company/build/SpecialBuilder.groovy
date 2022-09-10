@@ -5,29 +5,23 @@ public class SpecialBuilder{
     static SpecialBuilder instance = null;
     private Script script = null;
 
-    // public SpecialBuilder(script){
-    //     this.script = script;
-    // }
+    public SpecialBuilder(script){
+        this.script = script;
+    }
 
-    public SpecialBuilder(){}
+ 
 
-    // public static getInstance(script){
-    //     println("Here")
-    //     if(!instance) {
-    //         instance = SpecialBuilder(script);
-    //     }
-    //     return instance
-    // }
-    public static getInstance(){
+    public static getInstance(script){
         println("Here")
         if(!instance) {
-            instance = new SpecialBuilder();
+            instance = new SpecialBuilder(script);
         }
         return instance
     }
+ 
 
     def echo(){
-        sh "Hello world!"
+        this.script.sh "Hello world!"
     }
 
 }
