@@ -1,16 +1,15 @@
-package com.company;
+package com.company.build;
 
-@CompileStatic
-public class Builder{
+public class SpecialBuilder{
 
-    static Builder instance = null;
+    static SpecialBuilder instance = null;
     private Script script = null;
-    public Builder(Script script){
+    public SpecialBuilder(Script script){
         this.script = script;
     }
     public static getInstance(Script script){
         if(!instance) {
-            instance = Builder(script);
+            instance = SpecialBuilder(script);
         }
         return instance
     }
