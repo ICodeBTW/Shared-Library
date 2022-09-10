@@ -1,6 +1,6 @@
-package com.company
+package com.company;
 
-
+@CompileStatic
 public class Builder{
 
     static Builder instance = null;
