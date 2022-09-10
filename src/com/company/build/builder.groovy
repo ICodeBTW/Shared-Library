@@ -3,7 +3,7 @@ package com.company.build
 
 class builder {
 
-    public static builder instance = null;
+    static builder instance = null;
 
     public static def getInstance(){
         if(!instance) {
