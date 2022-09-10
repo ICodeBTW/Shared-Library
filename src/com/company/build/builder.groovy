@@ -1,13 +1,13 @@
 package com.company.build
 
 
-public class builder {
+public class Builder {
 
-    static builder instance = null;
+    static Builder instance = null;
 
     public static getInstance(){
         if(!instance) {
-            instance = builder();
+            instance = Builder();
         }
         return instance
     }

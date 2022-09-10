@@ -1,9 +1,9 @@
-import com.company.build.builder;
+import com.company.build.Builder;
 
 def call(Script script) {
     println('Hello world!')
     script.stage('new Stage') {
-        builder instance = builder.getInstance();
+        Builder instance = Builder.getInstance();
         instance.echo()
 
     }
