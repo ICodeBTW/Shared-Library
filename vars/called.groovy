@@ -1,4 +1,4 @@
-import NCD.NCD_Builder;
+import NCD.NcdBuild;
 
 def call(Script script) {
     println('Hello world!')
