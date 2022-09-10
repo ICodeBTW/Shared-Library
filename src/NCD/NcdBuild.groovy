@@ -3,7 +3,7 @@ import groovy.transform.SourceURI
 import java.nio.file.Path
 import java.nio.file.Paths
 
-class NCD_Builder {
+class NcdBuild {
 
     static int works = 604
     @SourceURI
@@ -30,7 +30,7 @@ class NCD_Builder {
 
 
     public static def loc() {
-        Path scriptLocation = Paths.get(NCD_Builder.uri)
+        Path scriptLocation = Paths.get(NcdBuild.uri)
         return scriptLocation.getParent().getParent().getParent().resolve('resources').toString()
     }
  
