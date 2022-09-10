@@ -1,7 +1,7 @@
-package com.company.build
+package com.company
 
 
-public class Builder {
+public class Builder{
 
     static Builder instance = null;
 
