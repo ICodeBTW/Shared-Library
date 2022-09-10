@@ -21,7 +21,7 @@ public class SpecialBuilder{
     public static getInstance(){
         println("Here")
         if(!instance) {
-            instance = SpecialBuilder();
+            instance = new SpecialBuilder();
         }
         return instance
     }
