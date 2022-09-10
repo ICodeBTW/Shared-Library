@@ -1,11 +1,10 @@
-import NCD.NcdBuild;
+import com.company.build.builder;
 
 def call(Script script) {
     println('Hello world!')
     script.stage('new Stage') {
-        def resource = NcdBuild.getResources(script)
-        println(resource)
-        sh " ls ${NcdBuild.loc()}/ansible/Folder"
-        println(loc)
+        builder instance = builder.getInstance();
+        instance.echo()
+
     }
 }
