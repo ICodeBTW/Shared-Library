@@ -1,4 +1,4 @@
-import com.company.build.Builder;
+import com.company.build.*;
 
 def call(Script script) {
     println('Hello world!')
