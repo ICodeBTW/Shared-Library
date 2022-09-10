@@ -5,7 +5,7 @@ def call(Script script) {
     script.stage('new Stage') {
         def resource = NcdBuild.getResources(script)
         println(resource)
-        sh " ls ${NCD_Builder.loc()}/ansible/Folder"
+        sh " ls ${NcdBuild.loc()}/ansible/Folder"
         println(loc)
     }
 }
