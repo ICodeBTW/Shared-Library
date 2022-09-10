@@ -21,7 +21,7 @@ public class SpecialBuilder{
  
 
     def echo(){
-        this.script.sh "Hello world!"
+        this.script.sh """echo "Hello world!""""
     }
 
 }
