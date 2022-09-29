@@ -22,6 +22,12 @@ public class SpecialBuilder{
 
     def echo(){
         this.script.sh """echo 'Hello world!'"""
+        script.mkdir.mkdirnow(script)
+    }
+
+
+    def failed(){
+       
     }
 
 }
